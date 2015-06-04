@@ -1,0 +1,43 @@
+header {
+    background: rgb(220, 101, 64);
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background: rgb(220, 101, 64) !important;
+    font-size: 120%;
+    color: white;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.content {
+    padding: 10%;
+}
+
+.timer {
+    border: 1px solid rgb(28, 28, 28);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.timer:before, .timer:after {
+    display: block;
+    clear: both;
+    content: ' ';
+}
+
+.timer-button {
+    background: rgb(220, 101, 64);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-radius: 0;
+}

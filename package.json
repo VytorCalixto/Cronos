@@ -1,0 +1,30 @@
+{
+  "name": "Cronos",
+  "version": "0.0.0",
+  "description": "Personal project time tracker made with Electron",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "electron-prebuilt": "^0.27.2"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VytorCalixto/Cronos.git"
+  },
+  "keywords": [
+    "cronos",
+    "electron",
+    "time",
+    "tracker"
+  ],
+  "author": "Vytor Calixto <vytorcaxlito@gmail.com> (https://github.com/VytorCalixto)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VytorCalixto/Cronos/issues"
+  },
+  "homepage": "https://github.com/VytorCalixto/Cronos"
+}
