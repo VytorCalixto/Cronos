@@ -1,3 +1,7 @@
+.bg-orange {
+    background: rgb(220, 101, 64);
+}
+
 header {
     background: rgb(220, 101, 64);
     padding-top: 50px;
@@ -18,19 +22,17 @@ header h1 {
 }
 
 .content {
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .timer {
     border: 1px solid rgb(28, 28, 28);
     text-align: center;
-    box-sizing: border-box;
-}
-
-.timer:before, .timer:after {
-    display: block;
-    clear: both;
-    content: ' ';
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .timer-button {
@@ -40,4 +42,8 @@ header h1 {
     border: none;
     padding: 10px;
     border-radius: 0;
+}
+
+.nav-item-active {
+    background-color: #E99638;
 }

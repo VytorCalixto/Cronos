@@ -1,0 +1,16 @@
+<section class="content">
+    <form ng-submit="new(newProject)">
+        <h3>New Project</h3>
+        <input type="text" name="name" placeholder="Name" ng-model="newProject.name" required>
+        <label for="private">Private?</label>
+        <input type="checkbox" id="private" ng-model="newProject.private">
+        <button type="submit" name="button" class="button-primary"><span class="fa fa-plus"></span></button>
+    </form>
+    <ul>
+        <li ng-repeat="project in projects track by $index">
+            <a href="#/app/projects/{{$index}}">
+                {{$index}} -- {{project.name}} -- {{project.private}}
+            </a>
+        </li>
+    </ul>
+</section>
