@@ -1,6 +1,8 @@
 var app = require('app');
 var BrowserWindow = require('browser-window');
 
+require('crash-reporter').start();
+
 app.on('window-all-closed', function() {
     console.log(process.platform);
     if(process.platform != 'darwin')

@@ -26,7 +26,7 @@ var user = {
 };
 
 function trackTime() {
-    if(tracker.getTime() === '00:00:00.000'){
+    if(tracker.getTime() === '00:00:00'){
         tracker.start(project, task);
         window.setInterval(function() {
             document.getElementById('time').innerHTML = tracker.getTime();
