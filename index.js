@@ -9,6 +9,8 @@ app.on('window-all-closed', function() {
         app.quit();
 });
 
+var mainWindow = null;
+
 app.on('ready', function() {
     var mainWindow = new BrowserWindow({
         width: 1080,
@@ -24,5 +26,9 @@ app.on('ready', function() {
         mainWindow.openDevTools();
         mainWindow.show();
         mainWindow.focus();
+    });
+
+    mainWindow.on('closed', function() {
+        mainWindow = null;
     });
 });
